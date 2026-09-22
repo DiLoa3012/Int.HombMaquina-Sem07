@@ -1,0 +1,42 @@
+<! doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Accesibilidad básica</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Enlace para saltar contenido principal -->
+<a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+<!-- Cabecera con role -->
+<header role="banner">
+<h1>Demo accesibilidad simple</h1>
+<div class="controles">
+<!-- Botón alto contraste -->
+<button id="btn-contraste" aria-pressed="false">Alto contraste</button>
+<!-- Botones de tamaño de fuente -->
+<button id="btn-mas">A+</button>
+<button id="btn-menos">A-</button>
+</div>
+</header>
+
+<!-- Contenido principal -->
+<main id="contenido" role="main">
+<h2>Bienvenido</h2>
+<p>
+Este es un ejemplo básico de cómo aplicar funciones de accesibilidad en una página web:
+</p>
+<ul>
+<li>Roles ARIA</li>
+<li>Modo de alto contraste</li>
+<li>Ajuste de tamaño de fuente</li>
+</ul>
+</main>
+
+<!-- Región aria-live para avisos -->
+<div id="avisos" aria-live="polite" class="sr-only"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

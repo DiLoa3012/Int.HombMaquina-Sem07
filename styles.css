@@ -1,0 +1,41 @@
+/* Estilo base */
+body {
+font-family: Arial, sans-serif;
+font-size: 16px;
+background: #fff;
+color:#000;
+margin: 1rem;
+line-height: 1.5;
+}
+
+/* Botones */
+button {
+margin: 0 .3rem;
+padding: .4rem .6rem;
+cursor: pointer;
+}
+/* Modo alto contraste */
+.alto-contraste {
+background: #000;
+color: #fff;
+}
+
+/* Enlace de saltar al contenido (oculto hasta foco) */
+.skip-link {
+position: absolute;
+left: -999px;
+}
+
+.skip-link:focus {
+left: 1rem;
+top: 1rem;
+background: yellow;
+padding: .5rem;
+}
+
+
+/* Solo visible para lectores de pantalla */
+.sr-only {
+position: absolute;
+left: -9999px;
+}
